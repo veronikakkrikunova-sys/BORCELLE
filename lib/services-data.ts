@@ -20,8 +20,8 @@ export const SERVICE_SUMMARIES: ServiceSummary[] = [
     title: 'Interior Services',
     label: 'Interior',
     cta: 'Explore interior services',
-    desc: 'House cleaning, deep cleans, move-in/move-out and turnover cleaning for homes, offices and short-term rentals.',
-    tags: ['House cleaning', 'Deep cleaning', 'Move-out cleaning', 'Airbnb turnovers'],
+    desc: 'Regular cleaning, deep cleans, move-in/move-out and turnover cleaning for homes, offices and short-term rentals.',
+    tags: ['Regular cleaning', 'Deep cleaning', 'Move-out cleaning', 'Airbnb turnovers'],
   },
   {
     slug: 'exterior',
@@ -87,7 +87,7 @@ export const SERVICE_DETAILS: Record<ServiceSlug, ServiceDetail> = {
       'Reliable interior cleaning for homes, offices and short-term rentals — from a weekly refresh to a full move-out deep clean, held to the same documented standard every visit.',
     tagline: 'Interior cleaning scoped to your space, not a one-size checklist',
     includes: [
-      { t: 'House Cleaning', d: 'Recurring weekly, biweekly or monthly cleans that keep every room to a consistent standard.' },
+      { t: 'Regular Cleaning', d: 'Recurring weekly, biweekly or monthly cleans that keep every room to a consistent standard.' },
       { t: 'Deep Cleaning', d: 'A top-to-bottom reset — baseboards, appliances, grout and the spots routine cleaning skips.' },
       { t: 'Move-In Cleaning', d: 'A full clean before you unpack, so day one starts in a spotless space.' },
       { t: 'Move-Out Cleaning', d: 'Detailed cleaning that satisfies landlord walkthroughs and helps secure your deposit.' },

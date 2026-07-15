@@ -24,7 +24,7 @@ export default function ServiceTermsPage() {
       <h2>1. Scope of Services</h2>
       <p>Borcelle Property Services provides residential and commercial property services, including but not limited to:</p>
       <ul>
-        <li>House Cleaning</li>
+        <li>Regular Cleaning</li>
         <li>Deep Cleaning</li>
         <li>Move-In and Move-Out Cleaning</li>
         <li>Airbnb Turnover Cleaning</li>

@@ -297,8 +297,8 @@ export default function HomePage() {
             </svg>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginTop: 20 }}>
               <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, padding: 16 }}>
-                <div style={{ fontSize: 12, color: '#8f887c', marginBottom: 8 }}>Open work orders</div>
-                <div style={{ fontWeight: 600, fontSize: 22 }}>12</div>
+                <div style={{ fontSize: 12, color: '#8f887c', marginBottom: 8 }}>Orders completed</div>
+                <div style={{ fontWeight: 600, fontSize: 22 }}>600+</div>
               </div>
               <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, padding: 16 }}>
                 <div style={{ fontSize: 12, color: '#8f887c', marginBottom: 8 }}>Avg. response</div>

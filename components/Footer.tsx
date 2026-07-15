@@ -75,7 +75,7 @@ export default function Footer() {
                 info@borcelle.ca
               </a>
               <span style={{ color: '#7c766b' }}>
-                Mon&ndash;Sun&nbsp; 7:30am&ndash;9:30pm
+                Mon&ndash;Sun&nbsp; 10am&ndash;6pm
               </span>
             </div>
           </div>

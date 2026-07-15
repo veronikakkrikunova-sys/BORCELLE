@@ -11,15 +11,7 @@ export const metadata: Metadata = {
     'Contact Borcelle Property Services — request a quote or book a property walkthrough. Serving Vancouver, Burnaby, Richmond, the North Shore, Surrey, Coquitlam and the Tri-Cities.',
 };
 
-const AREAS = ['Vancouver', 'Burnaby', 'Richmond', 'North Vancouver', 'West Vancouver', 'Surrey', 'Coquitlam', 'Port Moody', 'New Westminster'];
-
-const PINS = [
-  { label: 'Vancouver', left: '30%', top: '46%' },
-  { label: 'Burnaby', left: '55%', top: '40%' },
-  { label: 'Richmond', left: '34%', top: '70%' },
-  { label: 'North Shore', left: '46%', top: '18%' },
-  { label: 'Coquitlam', left: '72%', top: '32%' },
-];
+const AREAS = ['Vancouver', 'Burnaby', 'Richmond', 'North Vancouver', 'West Vancouver', 'Surrey', 'Coquitlam', 'Langley', 'New Westminster'];
 
 export default function ContactPage() {
   return (
@@ -82,7 +74,7 @@ export default function ContactPage() {
               <div>
                 <div style={{ fontSize: 12, color: '#857f74', marginBottom: 5 }}>Hours</div>
                 <div style={{ fontSize: 15, color: '#e2dccf', lineHeight: 1.5 }}>
-                  Mon&ndash;Sun&nbsp; 7:30am&ndash;9:30pm
+                  Mon&ndash;Sun&nbsp; 10am&ndash;6pm
                 </div>
               </div>
             </div>
@@ -132,30 +124,15 @@ export default function ContactPage() {
               borderRadius: 18,
               overflow: 'hidden',
               border: '1px solid rgba(255,255,255,0.12)',
-              background: 'linear-gradient(150deg,#2a2823,#141311)',
               minWidth: 0,
             }}
           >
-            <div
-              style={{
-                position: 'absolute',
-                inset: 0,
-                backgroundImage:
-                  'linear-gradient(rgba(255,255,255,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.05) 1px,transparent 1px)',
-                backgroundSize: '40px 40px',
-              }}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/assets/service-area-map.jpg"
+              alt="Map of Borcelle's Greater Vancouver service area"
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             />
-            <div style={{ position: 'absolute', left: '8%', top: '58%', width: '64%', height: 5, background: 'rgba(203,195,180,0.28)', borderRadius: 3, transform: 'rotate(-8deg)' }} />
-            <div style={{ position: 'absolute', left: '44%', top: '12%', width: 5, height: '70%', background: 'rgba(203,195,180,0.28)', borderRadius: 3, transform: 'rotate(6deg)' }} />
-            <div style={{ position: 'absolute', left: '20%', top: '20%', width: '30%', height: '22%', background: 'rgba(199,191,175,0.28)', borderRadius: '40% 50% 45% 55%' }} />
-            {PINS.map((p) => (
-              <div key={p.label} style={{ position: 'absolute', left: p.left, top: p.top, display: 'flex', alignItems: 'center', gap: 6 }}>
-                <span style={{ width: 12, height: 12, background: '#cbc3b4', border: '2px solid #141311', transform: 'rotate(45deg)', display: 'block', boxShadow: '0 2px 6px rgba(0,0,0,0.4)' }} />
-                <span style={{ fontSize: 11, fontWeight: 600, color: '#f4f2ee', background: 'rgba(18,17,15,0.8)', padding: '2px 8px', borderRadius: 999, whiteSpace: 'nowrap', letterSpacing: '0.02em' }}>
-                  {p.label}
-                </span>
-              </div>
-            ))}
             <div
               style={{
                 position: 'absolute',

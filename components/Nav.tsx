@@ -96,26 +96,24 @@ export default function Nav({ current }: { current: NavKey }) {
             style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 12, flex: 'none', minWidth: 0 }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/assets/borcelle-mark.png" alt="Borcelle" style={{ height: compact ? 32 : 38, width: 'auto', display: 'block', flex: 'none' }} />
+            <img src="/assets/borcelle-mark.png" alt="Borcelle" style={{ height: compact ? 30 : 38, width: 'auto', display: 'block', flex: 'none' }} />
             <span style={{ display: 'flex', flexDirection: 'column', gap: 2, minWidth: 0 }}>
-              <span style={{ fontWeight: 600, fontSize: compact ? 18 : 22, letterSpacing: '0.01em', color: '#f4f2ee', lineHeight: 1.05, whiteSpace: 'nowrap' }}>
+              <span style={{ fontWeight: 600, fontSize: compact ? 16 : 22, letterSpacing: '0.01em', color: '#f4f2ee', lineHeight: 1.05, whiteSpace: 'nowrap' }}>
                 Borcelle
               </span>
-              {!compact && (
-                <span
-                  style={{
-                    fontSize: 9,
-                    letterSpacing: '0.32em',
-                    color: '#8f887c',
-                    textTransform: 'uppercase',
-                    lineHeight: 1,
-                    fontWeight: 500,
-                    whiteSpace: 'nowrap',
-                  }}
-                >
-                  Property Services
-                </span>
-              )}
+              <span
+                style={{
+                  fontSize: compact ? 7 : 9,
+                  letterSpacing: compact ? '0.22em' : '0.32em',
+                  color: '#8f887c',
+                  textTransform: 'uppercase',
+                  lineHeight: 1,
+                  fontWeight: 500,
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                Property Services
+              </span>
             </span>
           </Link>
 
