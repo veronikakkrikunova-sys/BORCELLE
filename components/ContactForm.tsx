@@ -59,18 +59,21 @@ export default function ContactForm() {
     setSubmitting(true);
     setServerError(null);
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: '76e6aa64-d1b8-4b97-ae1f-cd292a80fc0c',
+          subject: `New quote request from ${form.name}`,
+          ...form,
+        }),
       });
       const data = await res.json().catch(() => ({}));
-      if (!res.ok) {
-        if (data.errors) setErrors(data.errors);
-        else setServerError(data.error || 'Something went wrong. Please try again or call us.');
-        return;
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        setServerError(data.message || 'Something went wrong. Please try again or call us.');
       }
-      setSubmitted(true);
     } catch {
       setServerError('Something went wrong. Please try again or call us.');
     } finally {
