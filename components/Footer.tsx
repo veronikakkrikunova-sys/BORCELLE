@@ -19,7 +19,7 @@ export default function Footer() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/assets/borcelle-mark.png" alt="Borcelle" style={{ height: 42, width: 'auto', display: 'block' }} />
               <span style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                <span style={{ fontWeight: 600, fontSize: 24, letterSpacing: '0.01em', color: '#f4f2ee', lineHeight: 1.05 }}>
+                <span style={{ fontWeight: 600, fontSize: 24, letterSpacing: '0.01em', color: '#f4f2ee', lineHeight: 1.05, textTransform: 'uppercase' }}>
                   Borcelle
                 </span>
                 <span style={{ fontSize: 9, letterSpacing: '0.32em', textTransform: 'uppercase', color: '#7c766b', fontWeight: 500, lineHeight: 1 }}>
