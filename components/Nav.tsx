@@ -98,7 +98,7 @@ export default function Nav({ current }: { current: NavKey }) {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/assets/borcelle-mark.png" alt="Borcelle" style={{ height: compact ? 30 : 38, width: 'auto', display: 'block', flex: 'none' }} />
             <span style={{ display: 'flex', flexDirection: 'column', gap: 2, minWidth: 0 }}>
-              <span style={{ fontWeight: 600, fontSize: compact ? 16 : 22, letterSpacing: '0.01em', color: '#f4f2ee', lineHeight: 1.05, whiteSpace: 'nowrap' }}>
+              <span style={{ fontWeight: 600, fontSize: compact ? 16 : 22, letterSpacing: '0.01em', color: '#f4f2ee', lineHeight: 1.05, whiteSpace: 'nowrap', textTransform: 'uppercase' }}>
                 Borcelle
               </span>
               <span
